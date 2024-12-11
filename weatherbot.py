@@ -7,7 +7,7 @@ WeatherAPI = 'your token' # token we take in https://openweathermap.org/api
 
 # also u can move tokens to .env file
 
-@bot.message_handler(commands=['start']) # this decorator only processes commands
+@bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Hey, u pressed /start. Lets go!')
 
@@ -18,7 +18,7 @@ def send_text(message):
         bot.register_next_step_handler(message, get_weather)
 
 
-def get_weather(message):
+def get_weather(message): 
     city = message.text.strip().lower()
     print(city)
     res = requests.get(
