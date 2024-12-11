@@ -1,5 +1,5 @@
 # telegrambot-weather-api
-Telegram bot with WeatherAPI
+Telegram bot with WeatherAPI (RU/ENG LANG)
 
 
 ---- ENG LANG ----
